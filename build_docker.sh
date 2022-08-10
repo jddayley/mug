@@ -1,0 +1,2 @@
+#docker stop mug;docker rm mug;docker build -t mug .;docker run -t -i -d --privileged  --network host -v /var/run/dbus/:/var/run/dbus/:z --restart=always --cap-add=SYS_ADMIN --cap-add=NET_ADMIN --name=mug mug 
+docker stop mug;docker rm mug;docker build -t mug .;docker run -t -i -d --privileged  --network host -v /var/run/dbus/:/var/run/dbus/:z --restart=always --cap-add=SYS_ADMIN --cap-add=NET_ADMIN --name=mug mug
